@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:orientation="vertical"
+    android:background="@drawable/grad"
+    android:id="@+id/mainview"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="Quiz-Time"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        app:cardBackgroundColor="@color/trans"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp"
+        android:id="@+id/cardView2">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/transfull"
+            android:text="Play Now"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+
+        android:layout_above="@+id/cardView2"
+        android:layout_alignStart="@+id/cardView2"
+        android:layout_marginBottom="19dp"
+        app:cardBackgroundColor="@color/trans"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp"
+        android:id="@+id/cardView3">
+
+        <Button
+            android:id="@+id/selques"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/transfull"
+            android:text="Number Of Questions 10"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+
+        android:layout_alignEnd="@+id/cardView2"
+        android:layout_alignTop="@+id/cardView3"
+        app:cardBackgroundColor="@color/trans"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp">
+
+        <Button
+            android:id="@+id/sellevel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/transfull"
+            android:text="Difficulty Level 2"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="300dp"
+
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/cardView2"
+        android:layout_below="@+id/cardView3"
+        android:layout_marginTop="73dp"
+        app:cardBackgroundColor="@color/trans"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp">
+
+        <Button
+            android:id="@+id/contest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/transfull"
+            android:text="Play Globally"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

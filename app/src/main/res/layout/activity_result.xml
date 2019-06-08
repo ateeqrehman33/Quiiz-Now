@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/grad"
+  >
+
+
+    <TextView
+        android:id="@+id/textcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:singleLine="true"
+        android:text="RESULT"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textRes"
+        android:textAlignment="center"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:singleLine="true"
+        android:text="No Of Questions asked"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardView5"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="83dp"
+        android:singleLine="true"
+        android:text="Your Score"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/cardView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        app:cardBackgroundColor="@color/trans"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp"
+        android:id="@+id/cardView5">
+
+        <Button
+            android:id="@+id/rcategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/trans"
+            android:text="Return to MainMenu"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/cardView5"
+        android:layout_marginBottom="40dp"
+        app:cardBackgroundColor="@color/trans"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp">
+
+        <Button
+            android:id="@+id/rcontinue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/trans"
+            android:text="Play Again"
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
